@@ -39,6 +39,16 @@ h2 {
     font-weight: 200;
 }
 
+/* after = permite que qualquer conteúdo seja adicionado depois da tag onde ele for aplicado*/
+h2::after {
+    display: block;
+    background-color: #078C31;
+    height: 5px;
+    width: 100px;
+    margin: 40px auto 30px;
+    content: "";
+}
+
 p,
 li,
 a {
@@ -49,6 +59,7 @@ a {
 /*-------------------  */
 /* ELEMENTOS DO HEADER */
 /* ------------------- */
+
 header div#chamada h1 {
     color: #FFF;
     /* deslocament-x| deslocamento-y| raio-de-destaque| cor */
@@ -70,4 +81,38 @@ header div#chamada a {
     padding: 20px 80px;
     border-radius: 50px;
     display: inline-block;
+}
+
+/*--------------------------------- */
+/* SEÇÃO - FINAL DE SEMANA PERFEITO */
+/* -------------------------------- */
+
+div.pontos-chaves h4 {
+    color: #404040;
+}
+
+div.pontos-chaves h4:after {
+    display: block;
+    background-color: #078C31;
+    height: 5px;
+    width: 30%;
+    margin: 20px auto 10px;
+    content: "";
+}
+
+/* ----------------- */
+/* ---SEÇÃO PIZZA--- */
+/* ----------------- */
+
+section#pizza p.destaque {
+    color: #FFF;
+    width: 40%;
+}
+
+section#pizza ul li {
+    color: white;
+    list-style: none;
+    line-height: 1.9;
+    font-size: 90%;
+    text-transform: uppercase;
 }

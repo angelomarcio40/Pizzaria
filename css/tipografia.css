@@ -67,11 +67,15 @@ p.destaque {
 /*-------------------  */
 /* ELEMENTOS DO HEADER */
 /* ------------------- */
-
 header div#chamada h1 {
     color: #FFF;
     /* deslocament-x| deslocamento-y| raio-de-destaque| cor */
     text-shadow: 4px 6px 10px #000;
+    animation-name: HeaderH1-moverDireita;
+    /* animation-name = define qual animção será inserida no elemento */
+    animation-duration: 2s;
+    /* animation-timing-function = define o tipo de animação que será aplicada no elementoe */
+    animation-timing-function: ease-out;
 }
 
 header div#chamada h4 {

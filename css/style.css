@@ -17,13 +17,18 @@ nav ul {
     display: flex;
     /* flex-flow é a forma abreviada de flex-direction define em linhas ou colunas e flex-wrap = define como os filhos serão exibidos caso não caibam na tela */
     flex-flow: row wrap;
-    /* altera o alonhamento hrizontal dos elementos filho */
+    /* altera o alinhamento horizontal dos elementos filho */
     justify-content: left;
     margin-top: 70px;
 }
 
 nav ul#esquerda {
     float: left;
+}
+
+nav ul#icone-menu-mobile {
+    float: right;
+    display: none;
 }
 
 nav ul#direita {
@@ -52,7 +57,7 @@ nav ul li a:hover {
     transition-duration: 0.8s;
 }
 
-/* quando o icone for do ionic icons, para aumentar ou diminuir seu tamanho utilize p height */
+/* quando o icone for do ion icon, para aumentar ou diminuir seu tamanho utilize p height */
 nav ion-icon {
     width: 45px;
     height: 45px;

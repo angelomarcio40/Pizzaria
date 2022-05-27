@@ -1,0 +1,17 @@
+/* ANIMAR TÍTULO */
+@keyframes HeaderH1-moverDireita{
+    0%{
+        opacity: 0;
+        /* Transfrom permite animar um elemnto na tela Transfex = altera a posição do elemento no eixo x */
+        transform: transltex(-75px);
+    }
+
+    70%{
+        transform: translatex(20px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
